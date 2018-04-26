@@ -6,9 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
     Animator myanim;
+    SpriteRenderer sp;
     void Start()
     {
         myanim = GetComponent<Animator>();
+        sp = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -16,45 +18,35 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") > 0.5f)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            myanim.SetTrigger("Walking_Left");
-            //myanim.SetBool("Walking_Right", true);
-            //myanim.SetBool("Walking_Down", false);
-            //myanim.SetBool("Walking_Left", false);
-            //myanim.SetBool("Walking_Up", false);
+            myanim.SetTrigger("Walking_Right");
+            sp.flipX = false;
         }
 
         //Left
         if(Input.GetAxisRaw("Horizontal") < -0.5f)
         {
             transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
+            myanim.SetTrigger("Walking_Left");
+            sp.flipX = true;
+
         }
 
         //Down
         if(Input.GetAxisRaw("Vertical") < -0.5f)
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
+            myanim.SetTrigger("Walking_Down");
+            sp.flipX = false;
         }
 
-        //Top
+        //Up
         if (Input.GetAxisRaw("Vertical") > 0.5f)
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-           
+            myanim.SetTrigger("Walking_Up");
+            sp.flipX = false;
         }
 
         
     }
-
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if(collision.gameObject.tag == "Player")
-    //    {
-    //        damageOverTime -= Time.deltaTime;
-    //        if(damageOverTime <= 0)
-    //        {
-    //            collision.gameObject.GetComponent<Health>().health -= 1;
-    //            damageOverTime = 1f;
-    //        }
-    //    }
-    //}
 }
