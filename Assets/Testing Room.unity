@@ -610,20 +610,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 95634126208525386, guid: 2d28a7e1e78be6843873ff47c684987c,
+    - target: {fileID: 212107962756134256, guid: 2d28a7e1e78be6843873ff47c684987c,
         type: 2}
-      propertyPath: m_Enabled
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212107962756134256, guid: 2d28a7e1e78be6843873ff47c684987c,
         type: 2}
       propertyPath: m_Size.x
-      value: 4.74
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 212107962756134256, guid: 2d28a7e1e78be6843873ff47c684987c,
         type: 2}
       propertyPath: m_Size.y
-      value: 4.55
+      value: 4.48
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d28a7e1e78be6843873ff47c684987c, type: 2}
