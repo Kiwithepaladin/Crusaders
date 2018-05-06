@@ -17,6 +17,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         CheckInput();
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            anim.Play("Maya_AttackDown");
+            anim.StopPlayback();
+        }
+
     }
 
 
@@ -32,6 +38,8 @@ public class PlayerController : MonoBehaviour
             isMoving = true;
             if (!GetComponent<BoxCollider2D>().IsTouchingLayers(Physics2D.AllLayers))
                 lastDirection = rigd2d.velocity;
+            else
+                lastDirection = rigd2d.velocity;
         }
 
         var moveVector = new Vector2(h, v);
@@ -40,9 +48,6 @@ public class PlayerController : MonoBehaviour
 
     void Movment(Vector2 moveVector)
     {
-        //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2((transform.position.x + moveVector.x * moveSpeed * Time.deltaTime),
-        //           transform.position.y + moveVector.y * moveSpeed * Time.deltaTime));
-
         rigd2d.velocity = Vector2.zero;
         rigd2d.AddForce(moveVector, ForceMode2D.Impulse);
 
