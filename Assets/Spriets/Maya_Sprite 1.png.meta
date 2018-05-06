@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: cac3a5d1a57b75546aa6efd5f0905eac
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Maya_AttackRight1
+    21300002: Maya_AttackRight2
+    21300004: Maya_AttackRight3
+    21300006: Maya_AttackRight4
+    21300008: Maya_AttackLeft4
+    21300010: Maya_AttackLeft3
+    21300012: Maya_AttackLeft2
+    21300014: Maya_AttackLeft1
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maya_AttackRight1
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 2402
+        width: 456
+        height: 494
+      alignment: 9
+      pivot: {x: 0.31509024, y: 0.5658794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959834c708d50204888df77f2397b060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackRight2
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 2386
+        width: 499
+        height: 463
+      alignment: 9
+      pivot: {x: 0.29248536, y: 0.53195024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05873c97c060f454f84073221aa29778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackRight3
+      rect:
+        serializedVersion: 2
+        x: 5551
+        y: 2437
+        width: 474
+        height: 455
+      alignment: 9
+      pivot: {x: 0.30338746, y: 0.51625603}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf499a69e9f3c664f926681447c71a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackRight4
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 2413
+        width: 397
+        height: 464
+      alignment: 9
+      pivot: {x: 0.36958587, y: 0.5382575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113b7c830c1817340a906de29eaf90d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackLeft4
+      rect:
+        serializedVersion: 2
+        x: 4166
+        y: 1665
+        width: 398
+        height: 464
+      alignment: 9
+      pivot: {x: 0.6412384, y: 0.5286934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2379ecea8d112e54fbf79b2c73765588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackLeft3
+      rect:
+        serializedVersion: 2
+        x: 4752
+        y: 1689
+        width: 475
+        height: 455
+      alignment: 9
+      pivot: {x: 0.70242804, y: 0.5227585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94093c6309064024b9534df3e1941f78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackLeft2
+      rect:
+        serializedVersion: 2
+        x: 5391
+        y: 1638
+        width: 499
+        height: 464
+      alignment: 9
+      pivot: {x: 0.71047956, y: 0.5318814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e12cf649ed36c45bcc5f40f528c914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackLeft1
+      rect:
+        serializedVersion: 2
+        x: 6181
+        y: 1641
+        width: 477
+        height: 502
+      alignment: 9
+      pivot: {x: 0.6767701, y: 0.5736697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2021e97db3cf104689a8bff9073a3fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ef14de42d7c0bc4d9c7dd8ff7a979db
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

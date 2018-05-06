@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     Animator anim;
     private bool isMoving;
+    private bool isAttacking;
     private Rigidbody2D rigd2d;
     private Vector2 lastDirection;
     void Start()
@@ -17,19 +18,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         CheckInput();
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
-        {
-            anim.Play("Maya_AttackDown");
-            anim.StopPlayback();
-        }
-
     }
 
 
     void CheckInput()
     {
         isMoving = false;
-
+        isAttacking = false;
         var h = Input.GetAxisRaw("Horizontal");
         var v = Input.GetAxisRaw("Vertical");
 
@@ -42,8 +37,20 @@ public class PlayerController : MonoBehaviour
                 lastDirection = rigd2d.velocity;
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            isAttacking = true;
+        }
+
         var moveVector = new Vector2(h, v);
         Movment(moveVector * moveSpeed);
+        MeleeAttack();
+    }
+
+    //MeleeAttack
+    void MeleeAttack()
+    {
+        SendAnimInfo();
     }
 
     void Movment(Vector2 moveVector)
@@ -63,6 +70,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("LastY", lastDirection.y);
 
         anim.SetBool("IsMoving", isMoving);
+        anim.SetBool("IsAttacking", isAttacking);
     }
 
     
