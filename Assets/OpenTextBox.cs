@@ -5,7 +5,6 @@ using UnityEngine;
 public class OpenTextBox : MonoBehaviour
 {
     public GameObject textBox;
-    private bool objectExists = false;
     GameObject temp;
 
     private void Update()
@@ -16,7 +15,6 @@ public class OpenTextBox : MonoBehaviour
     {
 
             GameObject.Instantiate(textBox);
-            objectExists = true;
           
 
 

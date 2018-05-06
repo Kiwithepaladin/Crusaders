@@ -5,48 +5,60 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    Animator myanim;
-    SpriteRenderer sp;
+    Animator anim;
+    private bool isMoving;
+    private Rigidbody2D rigd2d;
+    private Vector2 lastDirection;
     void Start()
     {
-        myanim = GetComponent<Animator>();
-        sp = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        rigd2d = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        //Right
-        if (Input.GetAxisRaw("Horizontal") > 0.5f)
-        {
-            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            myanim.SetTrigger("Walking_Right");
-            sp.flipX = false;
-        }
-
-        //Left
-        if(Input.GetAxisRaw("Horizontal") < -0.5f)
-        {
-            transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
-            myanim.SetTrigger("Walking_Left");
-            sp.flipX = true;
-
-        }
-
-        //Down
-        if(Input.GetAxisRaw("Vertical") < -0.5f)
-        {
-            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-            myanim.SetTrigger("Walking_Down");
-            sp.flipX = false;
-        }
-
-        //Up
-        if (Input.GetAxisRaw("Vertical") > 0.5f)
-        {
-            transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
-            myanim.SetTrigger("Walking_Up");
-            sp.flipX = false;
-        }
-
-        
+        CheckInput();
     }
+
+
+    void CheckInput()
+    {
+        isMoving = false;
+
+        var h = Input.GetAxisRaw("Horizontal");
+        var v = Input.GetAxisRaw("Vertical");
+
+        if(h < 0 || h > 0 || v < 0 || v > 0)
+        {
+            isMoving = true;
+            if (!GetComponent<BoxCollider2D>().IsTouchingLayers(Physics2D.AllLayers))
+                lastDirection = rigd2d.velocity;
+        }
+
+        var moveVector = new Vector2(h, v);
+        Movment(moveVector * moveSpeed);
+    }
+
+    void Movment(Vector2 moveVector)
+    {
+        //this.GetComponent<Rigidbody2D>().MovePosition(new Vector2((transform.position.x + moveVector.x * moveSpeed * Time.deltaTime),
+        //           transform.position.y + moveVector.y * moveSpeed * Time.deltaTime));
+
+        rigd2d.velocity = Vector2.zero;
+        rigd2d.AddForce(moveVector, ForceMode2D.Impulse);
+
+        SendAnimInfo();
+    }
+
+    void SendAnimInfo()
+    {
+        anim.SetFloat("XSpeed", rigd2d.velocity.x);
+        anim.SetFloat("YSpeed", rigd2d.velocity.y);
+
+        anim.SetFloat("LastX", lastDirection.x);
+        anim.SetFloat("LastY", lastDirection.y);
+
+        anim.SetBool("IsMoving", isMoving);
+    }
+
+    
 }

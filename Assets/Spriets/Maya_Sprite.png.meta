@@ -1,22 +1,40 @@
 fileFormatVersion: 2
 guid: 9782f4acab9d2134dbe6e74eeba612de
-timeCreated: 1523453593
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Maya_WalkingDown_1
-    21300002: Maya_WalkingDown_2
-    21300004: Maya_WalkingDown_3
-    21300006: Maya_WalkingSide_1
-    21300008: Maya_WalkingSide_2
-    21300010: Maya_JumpingUp_1
-    21300012: Maya_WalkingUp_1
-    21300014: Maya_WalkingUp_2
-    21300016: Maya_WalkingUp_3
-    21300018: Maya_JumpingSide_1
-    21300020: Maya_JumpingSide_2
-    21300022: Maya_JumpingDown_1
-  serializedVersion: 4
+    21300000: Maya_WalkingDown1
+    21300002: Maya_WalkingDown2
+    21300004: Maya_WalkingDown3
+    21300006: Maya_WalkingLeft1
+    21300008: Maya_WalkingLeft2
+    21300010: Maya_NotUsed1
+    21300012: Maya_WalkingRight1
+    21300014: Maya_WalkingRight2
+    21300016: Maya_WalkingTop1
+    21300018: Maya_WalkingTop2
+    21300020: Maya_WalkingTop3
+    21300022: Maya_Sprite_11
+    21300024: Maya_NotUsed2
+    21300026: Maya_Climb1
+    21300028: Maya_Climb2
+    21300030: Maya_Climb3
+    21300032: Maya_AttackDown1
+    21300034: Maya_AttackDown2
+    21300036: Maya_AttackDown3
+    21300038: Maya_AttackDown4
+    21300040: Maya_AttackDown5
+    21300042: Maya_AttackRight1
+    21300044: Maya_AttackRight2
+    21300046: Maya_AttackRight3
+    21300048: Maya_AttackTop1
+    21300050: Maya_AttackTop2
+    21300052: Maya_AttackTop3
+    21300054: Maya_AttackTop4
+    21300056: Maya_AttackTop5
+    21300058: Maya_AttackRight4
+    21300060: Maya_Death
+  externalObjects: {}
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,214 +74,683 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Maya_WalkingDown_1
+      name: Maya_WalkingDown1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 594
+        x: 143
+        y: 3749
+        width: 272
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a25c7dd44cb4a942952896124d2d88c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingDown2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 3753
+        width: 272
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9484f583b60d4114ca5123be13b1b590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingDown3
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 3762
+        width: 272
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388c2c8f735b82d47b92da2734528c75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingLeft1
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 3757
+        width: 316
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69916fb65680db54dab86df9ee19734b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingLeft2
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 3753
+        width: 276
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2698f98a5c8f4341a76c380682dd243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_NotUsed1
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 3777
+        width: 300
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212134872ce0b104c8aed971885af26f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingRight1
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 3827
+        width: 277
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1c11415d536a9428da38c24f2334e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingRight2
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 3827
+        width: 316
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4875eb9b9084764d8d6e744d0da638f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingTop1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 3247
         width: 261
-        height: 440
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ffdf3928213a4bb428990cff7066da6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingDown_2
+      name: Maya_WalkingTop2
       rect:
         serializedVersion: 2
-        x: 328
-        y: 600
+        x: 483
+        y: 3247
+        width: 259
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d6754430e52be45a1a33e6a4526424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_WalkingTop3
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 3247
+        width: 257
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fa670fc07bb1c49969001fe75f7581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 3243
+        width: 323
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912c02ba38e3199408dfa5c5cb5a735d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_NotUsed2
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 3270
+        width: 350
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab7825e952267640941d4faa0f1ddc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_Climb1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2460
+        width: 257
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399818301ee604c479c07dcdcbb1e083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_Climb2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 2472
+        width: 257
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f848a1f13468a14c84de12b7c91befb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_Climb3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2468
         width: 261
-        height: 440
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b75799f6634162c46a71cbb92ac7e89d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingDown_3
+      name: Maya_AttackDown1
       rect:
         serializedVersion: 2
-        x: 646
-        y: 609
-        width: 261
-        height: 440
+        x: 1412
+        y: 2479
+        width: 449
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4176e2c2cabf4648b20a581b4464425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingSide_1
+      name: Maya_AttackDown2
       rect:
         serializedVersion: 2
-        x: 967
-        y: 603
-        width: 239
-        height: 444
+        x: 1924
+        y: 2308
+        width: 416
+        height: 615
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7a07f14af399e04385d2da9edaa5cb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingSide_2
+      name: Maya_AttackDown3
       rect:
         serializedVersion: 2
-        x: 1285
-        y: 600
-        width: 239
-        height: 454
+        x: 2500
+        y: 2231
+        width: 272
+        height: 657
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fe15bb6ba1f85c74e929613dfb5dcef1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_JumpingUp_1
+      name: Maya_AttackDown4
       rect:
         serializedVersion: 2
-        x: 1585
-        y: 622
-        width: 249
-        height: 425
+        x: 2909
+        y: 2429
+        width: 370
+        height: 463
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e36a9ac648f51594b8c65548a8e0a49f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingUp_1
+      name: Maya_AttackDown5
       rect:
         serializedVersion: 2
-        x: 77
-        y: 92
-        width: 249
-        height: 443
+        x: 3369
+        y: 2398
+        width: 463
+        height: 490
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b754954a703dc3c46a8d116ef73ac7ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingUp_2
+      name: Maya_AttackRight1
       rect:
         serializedVersion: 2
-        x: 371
-        y: 94
-        width: 249
-        height: 441
+        x: 4113
+        y: 2445
+        width: 463
+        height: 455
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03720f632d1b4e741b0801b582943bd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_WalkingUp_3
+      name: Maya_AttackRight2
       rect:
         serializedVersion: 2
-        x: 679
-        y: 92
-        width: 249
-        height: 438
+        x: 4741
+        y: 2468
+        width: 460
+        height: 463
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d2206c382e341db4885ce41704c31c00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_JumpingSide_1
+      name: Maya_AttackRight3
       rect:
         serializedVersion: 2
-        x: 956
-        y: 88
-        width: 239
-        height: 444
+        x: 5329
+        y: 2483
+        width: 471
+        height: 464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b5a02d5203b7db34583a62d5473dca25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_JumpingSide_2
+      name: Maya_AttackTop1
       rect:
         serializedVersion: 2
-        x: 1219
-        y: 99
-        width: 239
-        height: 444
+        x: 1405
+        y: 1537
+        width: 487
+        height: 455
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23cebae8a0c1f1447980089db2a1fb04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: Maya_JumpingDown_1
+      name: Maya_AttackTop2
       rect:
         serializedVersion: 2
-        x: 1539
-        y: 116
-        width: 266
-        height: 422
+        x: 1993
+        y: 1529
+        width: 468
+        height: 452
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7e5371618b580bc44a3198d3f8945915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackTop3
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 1529
+        width: 292
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e845f3d31c451642b40f3a3d8f70b61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackTop4
+      rect:
+        serializedVersion: 2
+        x: 3030
+        y: 1545
+        width: 284
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257a57639622fa041bc7c7fd51f08d3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackTop5
+      rect:
+        serializedVersion: 2
+        x: 3376
+        y: 1560
+        width: 402
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea4ee6abbebfe647a8e2b54adb78c84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_AttackRight4
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 1977
+        width: 495
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079ef59dd07e2ce4f9a4e940b5608e79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maya_Death
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1642
+        width: 463
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50da25b9c00d9eb4e8b91fbd8e5a6ab0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 0656f410720ef1e4a9470b25d36dab11
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
