@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,16 +11,19 @@ public class PlayerController : MonoBehaviour
     private bool isAttacking;
     private Rigidbody2D rigd2d;
     private Vector2 lastDirection;
+
+    public float playerHealth;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         rigd2d = GetComponent<Rigidbody2D>();
     }
+
     void Update()
     {
         CheckInput();
     }
-
 
     void CheckInput()
     {
@@ -47,7 +51,7 @@ public class PlayerController : MonoBehaviour
         MeleeAttack();
     }
 
-    //MeleeAttack
+
     void MeleeAttack()
     {
         SendAnimInfo();

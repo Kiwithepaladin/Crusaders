@@ -7,11 +7,11 @@ TextureImporter:
     21300004: Maya_AttackRight3
     21300006: Maya_AttackRight4
     21300008: Maya_AttackRight5
-    21300010: Maya_AttackLeft5
-    21300012: Maya_AttackLeft4
-    21300014: Maya_AttackLeft3
-    21300016: Maya_AttackLeft2
-    21300018: Maya_AttackLeft1
+    21300010: Maya_Sprite 1_32
+    21300012: Maya_Sprite 1_33
+    21300014: Maya_Sprite 1_34
+    21300016: Maya_Sprite 1_35
+    21300018: Maya_Sprite 1_36
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -106,18 +106,18 @@ TextureImporter:
       name: Maya_AttackRight1
       rect:
         serializedVersion: 2
-        x: 4444
-        y: 2257
-        width: 401
-        height: 569
+        x: 4250
+        y: 2134
+        width: 394
+        height: 561
       alignment: 9
-      pivot: {x: 0.34875214, y: 0.6299896}
+      pivot: {x: 0.33049205, y: 0.6221813}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 985329f9a1473cc4ea5e7f73f993d92e
+      spriteID: 0a8fea59b359dd343828102dbce5f6c2
       vertices: []
       indices: 
       edges: []
@@ -126,18 +126,18 @@ TextureImporter:
       name: Maya_AttackRight2
       rect:
         serializedVersion: 2
-        x: 4954
-        y: 2324
-        width: 456
-        height: 494
+        x: 4759
+        y: 2259
+        width: 466
+        height: 449
       alignment: 9
-      pivot: {x: 0.31509024, y: 0.5688738}
+      pivot: {x: 0.30010855, y: 0.5234859}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9451298ed15a37d48b6c07f77847443f
+      spriteID: b3e3250f7469460499c1bbc7d307dfc3
       vertices: []
       indices: 
       edges: []
@@ -146,18 +146,18 @@ TextureImporter:
       name: Maya_AttackRight3
       rect:
         serializedVersion: 2
-        x: 5582
-        y: 2351
-        width: 491
-        height: 463
+        x: 5360
+        y: 2228
+        width: 483
+        height: 454
       alignment: 9
-      pivot: {x: 0.29814392, y: 0.541535}
+      pivot: {x: 0.29258865, y: 0.5348406}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aa3723b252c3494dad49fec3564959d
+      spriteID: e7300ba97c1859045870f047ce374d59
       vertices: []
       indices: 
       edges: []
@@ -166,18 +166,18 @@ TextureImporter:
       name: Maya_AttackRight4
       rect:
         serializedVersion: 2
-        x: 6191
-        y: 2362
-        width: 467
-        height: 479
+        x: 5972
+        y: 2254
+        width: 448
+        height: 447
       alignment: 9
-      pivot: {x: 0.29410425, y: 0.52919674}
+      pivot: {x: 0.3038461, y: 0.523591}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc007f28fa94c9146ae353657b14d08d
+      spriteID: 02b2f028a34147447a041a039d23c5fc
       vertices: []
       indices: 
       edges: []
@@ -186,118 +186,118 @@ TextureImporter:
       name: Maya_AttackRight5
       rect:
         serializedVersion: 2
-        x: 6832
-        y: 2354
-        width: 413
-        height: 463
+        x: 6608
+        y: 2232
+        width: 403
+        height: 454
       alignment: 9
-      pivot: {x: 0.34240103, y: 0.5287553}
+      pivot: {x: 0.3386382, y: 0.52709854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc7c84fec7f22a4fbe8a070babdc3a3
+      spriteID: 3153ac2157fe87247b329da7491329a0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maya_AttackLeft5
+      name: Maya_Sprite 1_32
       rect:
         serializedVersion: 2
-        x: 4359
-        y: 1607
-        width: 412
-        height: 463
-      alignment: 9
-      pivot: {x: 0.66278964, y: 0.52716106}
+        x: 4301
+        y: 1459
+        width: 403
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 745e601a855d3e64db287bde84eb552c
+      spriteID: 305a901caf10c23449a6bc0af773e338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maya_AttackLeft4
+      name: Maya_Sprite 1_33
       rect:
         serializedVersion: 2
-        x: 4939
-        y: 1627
-        width: 467
-        height: 459
-      alignment: 9
-      pivot: {x: 0.7063307, y: 0.5177401}
+        x: 4893
+        y: 1481
+        width: 448
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd5f1303a7d1a94eb4981693e1f3400
+      spriteID: 9782e7a370b25864aa664126c11096c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maya_AttackLeft3
+      name: Maya_Sprite 1_34
       rect:
         serializedVersion: 2
-        x: 5539
-        y: 1603
-        width: 482
-        height: 463
-      alignment: 9
-      pivot: {x: 0.6999096, y: 0.52344936}
+        x: 5470
+        y: 1455
+        width: 483
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11f208bb827550646b32a3b8335b0f62
+      spriteID: f548b2cc9e886c24999f9d51d153a631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maya_AttackLeft2
+      name: Maya_Sprite 1_35
       rect:
         serializedVersion: 2
-        x: 6193
-        y: 1576
-        width: 456
-        height: 494
-      alignment: 9
-      pivot: {x: 0.6874989, y: 0.55494475}
+        x: 6115
+        y: 1464
+        width: 466
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e373e0c01f72cb44ae6aa705208f735
+      spriteID: 8a8a3e3e27474dc41ad6d402e5fea415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Maya_AttackLeft1
+      name: Maya_Sprite 1_36
       rect:
         serializedVersion: 2
-        x: 6755
-        y: 1486
-        width: 401
-        height: 572
-      alignment: 9
-      pivot: {x: 0.6522975, y: 0.61151314}
+        x: 6696
+        y: 1339
+        width: 394
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6521f70975a31ff4ea67cf01a752e9ff
+      spriteID: c2afab5eca493a04ab321b3301e8eb6f
       vertices: []
       indices: 
       edges: []
@@ -305,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 923864d5286c006469522c6f9688a064
+    spriteID: 783c72ccac7efb4408ebf3122ea5a015
     vertices: []
     indices: 
     edges: []
