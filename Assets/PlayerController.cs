@@ -5,24 +5,29 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
+    public float playerSpeed;
     Animator anim;
     private bool isMoving;
     private bool isAttacking;
     private Rigidbody2D rigd2d;
     private Vector2 lastDirection;
-
     public float playerHealth;
+    [SerializeField]
+    private GameObject playerShield;
+    public float shieldAmount;
+    public bool isShieldActive;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rigd2d = GetComponent<Rigidbody2D>();
+        isShieldActive = false;
     }
 
     void Update()
     {
         CheckInput();
+        
     }
 
     void CheckInput()
@@ -32,7 +37,7 @@ public class PlayerController : MonoBehaviour
         var h = Input.GetAxisRaw("Horizontal");
         var v = Input.GetAxisRaw("Vertical");
 
-        if(h < 0 || h > 0 || v < 0 || v > 0)
+        if ((h < 0 || h > 0 || v < 0 || v > 0))
         {
             isMoving = true;
             if (!GetComponent<BoxCollider2D>().IsTouchingLayers(Physics2D.AllLayers))
@@ -43,18 +48,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
-            isAttacking = true;
+            StartCoroutine(Attack(0.7f));
         }
 
         var moveVector = new Vector2(h, v);
-        Movment(moveVector * moveSpeed);
-        MeleeAttack();
-    }
-
-
-    void MeleeAttack()
-    {
-        SendAnimInfo();
+        Movment(moveVector * playerSpeed);
+        Shield();
     }
 
     void Movment(Vector2 moveVector)
@@ -75,6 +74,34 @@ public class PlayerController : MonoBehaviour
 
         anim.SetBool("IsMoving", isMoving);
         anim.SetBool("IsAttacking", isAttacking);
+    }
+    void MeleeAttack()
+    {
+        isMoving = false;
+        isAttacking = true;
+        SendAnimInfo();
+    }
+
+    void Shield()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftControl) && shieldAmount > 0)
+        {
+            playerShield.SetActive(!isShieldActive);
+            isShieldActive = !isShieldActive;
+        }
+        else if(shieldAmount <= 0)
+        {
+            isShieldActive = false;
+            playerShield.SetActive(isShieldActive);
+        }
+    }
+
+    private IEnumerator Attack(float time)
+    {
+        isMoving = false;
+        isAttacking = true;
+        SendAnimInfo();
+        yield return new WaitForSeconds(time);
     }
 
     
