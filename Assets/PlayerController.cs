@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
-            StartCoroutine(Attack(0.7f));
+            MeleeAttack();
         }
 
         var moveVector = new Vector2(h, v);
@@ -95,14 +95,4 @@ public class PlayerController : MonoBehaviour
             playerShield.SetActive(isShieldActive);
         }
     }
-
-    private IEnumerator Attack(float time)
-    {
-        isMoving = false;
-        isAttacking = true;
-        SendAnimInfo();
-        yield return new WaitForSeconds(time);
-    }
-
-    
 }
